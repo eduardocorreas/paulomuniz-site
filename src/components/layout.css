@@ -55,6 +55,7 @@ img {
     background-image: url('../images/portfolio/comida/16.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -70,7 +71,8 @@ img {
   .hero-bg {
     background-image: url('../images/portfolio/modelo/3.jpg');
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-position: center;
+    background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
