@@ -13,7 +13,7 @@ export default function PortfolioList() {
             id
             relativePath
             childImageSharp {
-              fluid(maxWidth: 300) {
+              fluid(maxWidth: 1080) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -26,7 +26,7 @@ export default function PortfolioList() {
   return (
     <>
       <PortfolioVideo />
-      <div className="portfolioContainer-all">
+      <div className="portfolioContainer-all flex flex-wrap gap-3 justify-center">
         {data.images.edges.map(({ node }, i) => {
           return <PortfolioItem key={i} image={node} />
         })}

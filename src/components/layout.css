@@ -20,12 +20,6 @@
   padding: 10px;
 }
 
-.title {
-  font-size: 25px;
-  font-weight: 300;
-  text-align: center;
-}
-
 .subtitle {
   text-align: center;
 }
@@ -64,13 +58,17 @@ img {
   display: block;
   transition-duration: 0.3s;
 }
-@media only screen and (max-width: 900px) {
-  .portfolioContainer {
-    width: calc(50% - 6px);
+@media (min-width: 700px) {
+  .title {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 414px) {
-  .portfolioContainer {
-    width: 100%;
+  .title {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
   }
 }

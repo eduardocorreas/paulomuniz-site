@@ -7,16 +7,15 @@ export default function PortfolioVideo() {
     'pWvNMgVCyXA',
     'fU0Dt9MYVy0',
     'WK_owg4qNLI',
-    'FBcw7xwKM4k',
   ])
 
   const params = 'fs=1&modestbranding=1&egm=1&rel=0'
 
   return (
-    <div className="portfolioContainer-all">
+    <div className="portfolioContainer-all flex flex-wrap ">
       {videos.map(id => {
         return (
-          <div className="portfolioContainer">
+          <div className="w-full mb-3 sm:w-1/4">
             <YoutubeIframe id={id} params={params} />
           </div>
         )

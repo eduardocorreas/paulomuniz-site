@@ -8,7 +8,7 @@ config.autoAddCss = false
 
 export default function SocialIcons() {
   return (
-    <div className="flex pl-20 pr-20 justify-around">
+    <div className="flex gap-5 pl-20 pr-20 justify-center">
       <a
         href="https://instagram.com/paulok1"
         target="_blank"
