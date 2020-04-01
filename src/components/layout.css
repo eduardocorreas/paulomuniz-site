@@ -52,7 +52,7 @@ img {
 }
 @media (min-width: 700px) {
   .hero-bg {
-    background-image: url('../images/portfolio/16.jpg');
+    background-image: url('../images/portfolio/comida/16.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -o-background-size: cover;
@@ -68,7 +68,7 @@ img {
 }
 @media only screen and (max-width: 414px) {
   .hero-bg {
-    background-image: url('../images/portfolio/3.jpg');
+    background-image: url('../images/portfolio/modelo/3.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     -o-background-size: cover;

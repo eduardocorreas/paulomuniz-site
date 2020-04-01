@@ -7,7 +7,24 @@ import PortfolioVideo from './porfolioVideo'
 export default function PortfolioList() {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(filter: { relativeDirectory: { eq: "portfolio" } }) {
+      modelo: allFile(
+        filter: { relativeDirectory: { eq: "portfolio/modelo" } }
+      ) {
+        edges {
+          node {
+            id
+            relativePath
+            childImageSharp {
+              fluid(maxWidth: 1080) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+      comida: allFile(
+        filter: { relativeDirectory: { eq: "portfolio/comida" } }
+      ) {
         edges {
           node {
             id
@@ -25,9 +42,16 @@ export default function PortfolioList() {
 
   return (
     <>
-      <PortfolioVideo />
       <div className="portfolioContainer-all flex flex-wrap gap-3 justify-center">
-        {data.images.edges.map(({ node }, i) => {
+        {data.modelo.edges.map(({ node }, i) => {
+          return <PortfolioItem key={i} image={node} />
+        })}
+      </div>
+      <div className="mt-10 mb-10">
+        <PortfolioVideo />
+      </div>
+      <div className="portfolioContainer-all flex flex-wrap gap-3 justify-center">
+        {data.comida.edges.map(({ node }, i) => {
           return <PortfolioItem key={i} image={node} />
         })}
       </div>
