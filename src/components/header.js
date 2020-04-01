@@ -7,7 +7,7 @@ export default function Header() {
     query {
       logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 1080) {
             ...GatsbyImageSharpFluid
           }
         }

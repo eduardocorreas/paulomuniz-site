@@ -8,14 +8,6 @@
 
 @tailwind utilities;
 
-.hero-bg {
-  background-image: url('../images/portfolio/3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  background-attachment: fixed;
-}
-
 .section-title {
   padding: 10px;
 }
@@ -59,6 +51,14 @@ img {
   transition-duration: 0.3s;
 }
 @media (min-width: 700px) {
+  .hero-bg {
+    background-image: url('../images/portfolio/16.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+  }
+
   .title {
     font-size: 35px;
     font-weight: 300;
@@ -66,6 +66,13 @@ img {
   }
 }
 @media only screen and (max-width: 414px) {
+  .hero-bg {
+    background-image: url('../images/portfolio/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+  }
   .title {
     font-size: 25px;
     font-weight: 300;

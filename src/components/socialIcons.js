@@ -8,7 +8,7 @@ config.autoAddCss = false
 
 export default function SocialIcons() {
   return (
-    <div className="flex gap-5 pl-20 pr-20 justify-center">
+    <div className="flex pl-20 pr-20 justify-center">
       <a
         href="https://instagram.com/paulok1"
         target="_blank"
@@ -16,7 +16,7 @@ export default function SocialIcons() {
       >
         <FontAwesomeIcon
           icon={faInstagram}
-          className="text-white w-5 mx-auto"
+          className="text-white w-5 mx-auto  mr-5 ml-5"
         />
       </a>
 
@@ -25,7 +25,10 @@ export default function SocialIcons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faWhatsapp} className="text-white w-5 mx-auto" />
+        <FontAwesomeIcon
+          icon={faWhatsapp}
+          className="text-white w-5 mx-auto mr-5 ml-5"
+        />
       </a>
 
       <a
@@ -33,7 +36,10 @@ export default function SocialIcons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon icon={faEnvelope} className="text-white w-5 mx-auto" />
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          className="text-white w-5 mx-auto   mr-5 ml-5"
+        />
       </a>
     </div>
   )
