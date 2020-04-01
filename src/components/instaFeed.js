@@ -54,7 +54,7 @@ export default function InstaFeed() {
       <div className="flex flex-wrap gap-2 mb-4 sm:pl-32 sm:pr-32 sm:pt-10 sm:pb-0 justify-center">
         {data.posts.edges.map((item, i) =>
           item.node.localFile ? (
-            <div key={i} className="w-32 sm:w-40 sm:p-3">
+            <div key={i} className="w-32 p-1 sm:w-40 sm:p-3">
               <a
                 href={'https://instagram.com/p/' + item.node.id}
                 target="_blank"
