@@ -5,6 +5,7 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import About from '../components/about'
 import Portfolio from '../components/portfolio'
+import InstaFeed from '../components/instaFeed'
 import Contact from '../components/contact'
 import SEO from '../components/seo'
 
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Hero />
     <About />
     <Portfolio />
+    <InstaFeed />
     <Contact />
   </Layout>
 )
