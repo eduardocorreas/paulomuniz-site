@@ -42,7 +42,7 @@ export default function PortfolioList() {
 
   return (
     <>
-      <div className="portfolioContainer-all flex flex-wrap gap-3 justify-center">
+      <div className="portfolioContainer-all flex flex-wrap justify-center">
         {data.modelo.edges.map(({ node }, i) => {
           return <PortfolioItem key={i} image={node} />
         })}
@@ -50,7 +50,7 @@ export default function PortfolioList() {
       <div className="mt-10 mb-10">
         <PortfolioVideo />
       </div>
-      <div className="portfolioContainer-all flex flex-wrap gap-3 justify-center">
+      <div className="portfolioContainer-all flex flex-wrap justify-center">
         {data.comida.edges.map(({ node }, i) => {
           return <PortfolioItem key={i} image={node} />
         })}

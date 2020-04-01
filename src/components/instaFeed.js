@@ -51,7 +51,7 @@ export default function InstaFeed() {
           </a>
         </p>
       </div>
-      <div className="flex flex-wrap gap-2 mb-4 sm:pl-32 sm:pr-32 sm:pt-10 sm:pb-0 justify-center">
+      <div className="flex flex-wrap ml-1 mr-1 mb-4 sm:pl-32 sm:pr-32 sm:pt-10 sm:pb-0 justify-center">
         {data.posts.edges.map((item, i) =>
           item.node.localFile ? (
             <div key={i} className="w-32 p-1 sm:w-40 sm:p-3">
