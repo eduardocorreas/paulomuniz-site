@@ -42,18 +42,25 @@ export default function PortfolioList() {
 
   return (
     <>
-      <div className="portfolioContainer-all flex flex-wrap justify-center">
-        {data.modelo.edges.map(({ node }, i) => {
-          return <PortfolioItem key={i} image={node} />
-        })}
+      <div>
+        <p className="subtitle">Fotografia Modelo</p>
+        <div className="portfolioContainer-all flex flex-wrap justify-center">
+          {data.modelo.edges.map(({ node }, i) => {
+            return <PortfolioItem key={i} image={node} />
+          })}
+        </div>
       </div>
       <div className="mt-10 mb-10">
+        <p className="subtitle">Filmagem (Clique para assistir)</p>
         <PortfolioVideo />
       </div>
-      <div className="portfolioContainer-all flex flex-wrap justify-center">
-        {data.comida.edges.map(({ node }, i) => {
-          return <PortfolioItem key={i} image={node} />
-        })}
+      <div>
+        <p className="subtitle">Fotografias</p>
+        <div className="portfolioContainer-all flex flex-wrap justify-center">
+          {data.comida.edges.map(({ node }, i) => {
+            return <PortfolioItem key={i} image={node} />
+          })}
+        </div>
       </div>
     </>
   )
